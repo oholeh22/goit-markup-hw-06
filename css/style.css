@@ -105,7 +105,7 @@ section {
 
 .open-menu-btn {
     padding: 0;
-    color: transparent;
+    background-color: transparent;
     cursor: pointer;
     line-height: 0;
     border: none;
@@ -123,12 +123,12 @@ section {
 
     .open-menu-btn {
         display: none;
+        
     }
-
-    .logo{
+    .logo {
         margin-right: 120px;
     }
-
+    }
     
 
     .link-nav {
@@ -190,7 +190,7 @@ section {
     .contacts:focus {
         color: #404bbf;
     }
-}
+
 
 @media screen and (min-width: 1158px) {
     .logo {
