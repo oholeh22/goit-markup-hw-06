@@ -39,9 +39,22 @@ section {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 /* -------------HEADER------------ */
@@ -69,13 +82,13 @@ section {
 }
 
 .list-header-container {
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
 .address-container {
-    display: flex;
-    gap: 40px;
+    display: none;
+    /* gap: 40px; */
 }
 
 /* .title {
@@ -162,6 +175,7 @@ section {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
+    padding: 17px 0;
 }
 
 .logo-color {
@@ -224,6 +238,7 @@ section {
 .item-contacts {
     font-style: normal;
     margin-left: auto;
+    display: none;
 }
 
 .contacts {
