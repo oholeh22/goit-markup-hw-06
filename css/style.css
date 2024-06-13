@@ -40,8 +40,10 @@ img {
 
 .container {
     max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1011,5 +1013,28 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-    
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .second-section {
+        width: calc((100% - 2 * 72px)  /4);
+    }
+
+    .features-img {
+        visibility: visible;
+        display: flex;
+    }
+
+    .title-point {
+    font-weight: 500;
+    font-size: 20px;
+    }
+
+    .features-text {
+    font-weight: 400;
+    }
 }
+
