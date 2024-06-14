@@ -996,15 +996,16 @@ img {
     }
 
     .features-container {
-        gap:  72px 24px;
+        gap: 72px 24px;
         flex-direction: row;
         flex-wrap: wrap;
         display: flex;
+        
     }
 
     .second-section {
         padding-bottom: 0;
-        width: calc((100% - 72px)  /2);
+        width: calc((100% - 24px)  /2);
     }
 
     .title-point {
@@ -1020,7 +1021,7 @@ img {
     }
 
     .second-section {
-        width: calc((100% - 2 * 72px)  /4);
+        width: calc((100% - 2 * 36px)  /4);
     }
 
     .features-img {
@@ -1036,5 +1037,6 @@ img {
     .features-text {
     font-weight: 400;
     }
+
 }
 
