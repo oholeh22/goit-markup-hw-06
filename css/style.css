@@ -343,7 +343,6 @@ img {
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 48px;
 }
 
@@ -351,6 +350,13 @@ img {
     padding-left: 0;
     margin: 0;
     flex-basis: calc((100% - 3 * 24px) / 4);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: 100%;
+}
+
+.portfolio-img {
+    
 }
 
 /* flex-basis: calc(1128px / 6); */
@@ -612,15 +618,9 @@ img {
 }
 
 .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
     text-decoration: none;
-}
-
-.porftfolio-item-container {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .title-portfolio {
@@ -660,8 +660,7 @@ img {
 }
 
 .overlay {
-    width: 360px;
-    height: 300px;
+    
     position: relative;
     overflow: hidden;
 }
@@ -1113,6 +1112,18 @@ img {
     .title-point {
         text-align: left;
     }  
+
+    .porftfolio-container {
+        gap: 72px;
+    }
+
+    .list-portfolio {
+        gap: 24px;
+        display: flex;
+        height: 100%;
+    }
+
+    
 }
 
 @media screen and (min-width: 1158px) {
@@ -1154,5 +1165,20 @@ img {
     font-weight: 400;
     }
 
+    .portfolio {
+        padding-top: 120px;
+    }
+
+    .list-portfolio {
+        flex-wrap: wrap;
+    }
+
+    .porftfolio-item-container {
+        gap: 24px;
+    }
+
+    .portfolio-img {
+        
+    }
 }
 
