@@ -318,13 +318,11 @@ img {
 }
 
 
-/* .team-container {
+.team-container {
     display: flex;
-    gap: 24px;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-} */
+    flex-direction: column;
+    gap: 72px;
+}
 
 .team-item-container {
     padding: 32px 0;
@@ -524,7 +522,7 @@ img {
 
 .our-team {
     background-color: #F4F4FD;
-    
+    display: flex;
 }
 
 .team-title {
@@ -548,10 +546,11 @@ img {
 .list-team {
     text-decoration: none;
     list-style-type: none;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px; */
     padding-bottom: 96px;
+    
 }
 
 .team-item {
@@ -562,6 +561,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    
 }
 
 .name-team {
@@ -697,17 +697,18 @@ img {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .box-footer {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;;
-    
+    padding: 96px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-social-paragraph {
@@ -717,6 +718,8 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -732,12 +735,20 @@ img {
 }
 
 .footer-social {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    /* display: flex;
+    justify-content: center; */
+    max-width: 208px;
+    margin-left: 40px;
+    padding-bottom: 72px;
 }
 
 .logo-footer {
-    display: inline-block;
-    margin-bottom: 16px;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 16px; */
+    
 }
 
 .footer-text {
@@ -747,10 +758,11 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-bottom: 72px;
 }
 
 .footer-size {
-    max-width: 264px;
+    /* max-width: 264px; */
 }
 
 .icon-link-footer:hover,
@@ -987,14 +999,21 @@ img {
     color: #fff;
 }
 
+.form-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .icon-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    align-items: end;
+    justify-content: center;
 }
 
 .input-footer {
@@ -1126,6 +1145,12 @@ img {
         flex-direction: column;
     } */
 
+    .team-container {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
     .list-team {
         padding-left: 92px;
     }
@@ -1144,6 +1169,51 @@ img {
         width: 356px;
         height: 300px;
     }
+
+    .logo-footer {
+        justify-content: left;
+    }
+
+    .footer-size {
+        max-width: 264px;
+    }
+
+    .footer-container {
+        /* align-items: center; */
+        padding-left: 96px;
+        padding-right: 148px;
+        
+    }
+
+
+
+    .footer-social {
+        margin-left: 24px;
+        align-self: start;
+    }
+
+    .footer-social-paragraph {
+        display: block;
+        padding: 17px 0;
+    }
+
+    .form-footer-container {
+        align-items: normal;
+        
+    }
+
+    .form-footer {
+        align-items: baseline;
+    }
+
+    .form-footer-text {
+        margin-bottom: 0;
+        max-width: 75px;
+    }
+
+    .box-footer {
+        /* margin-right: 24px; */
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1151,6 +1221,7 @@ img {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+        
     }
 
     .main-section {
@@ -1205,6 +1276,48 @@ img {
 
     .portfolio-img {
         width: 360px;
+    }
+
+    .logo-footer {
+        display: block;
+    }
+
+    .footer {
+        max-width: 1440px;
+        padding: 100px 0;
+        /* max-width: 100%; */
+    }
+
+    .box-footer {
+        margin-right: 120px;
+    }
+
+    .footer-social {
+        /* margin-right: 120px; 
+        display: flex;
+        justify-content: center; */
+        margin-left: 0;
+        margin-right: 80px;
+}
+
+    .form-footer-container {
+        
+    }
+
+    .input-footer {
+        margin-top: 0;
+    }
+
+    .form-footer-text {
+        padding: 17px 0;
+    }
+
+    .footer-social-paragraph {
+        margin-bottom: 0;
+    }
+
+    .footer-container {
+        
     }
 }
 
