@@ -831,7 +831,7 @@ list-style-type: none;
     /* width: 408px;
     min-height: 584px; */
     width: 288px;
-    /* height: 623px; */
+    min-height: 623px;
     background: #fcfcfc;
     border-radius: 4px;
     top: 50%;
