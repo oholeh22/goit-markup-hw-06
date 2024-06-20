@@ -140,7 +140,7 @@
       </div>
     </header>
     <main>
-      <section class="main-section first-section">
+      <section class="main-section container">
         <div class="container">
           <h1 class="title-solutions">Effective Solutions for Your Business</h1>
           <button type="button" class="button-text">Order Service</button>
@@ -213,12 +213,17 @@
           </ul>
         </div>
       </section>
-      <section class="our-team section">
+      <section class="our-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="list-team team-container">
             <li class="team-photo team-item">
-              <img src="./images/img.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/img.jpg 1x, ./images/img-2x.png 2x"
+                src="./images/img.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="team-item-container">
                 <h3 class="name-team employee-section">Mark Guerrero</h3>
                 <p class="about employee-position">Product Designer</p>
@@ -267,7 +272,12 @@
               </div>
             </li>
             <li class="team-photo team-item">
-              <img src="./images/img1.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.png 2x"
+                src="./images/img1.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="team-item-container">
                 <h3 class="name-team employee-section">Tom Ford</h3>
                 <p class="about employee-position">Frontend Developer</p>
@@ -316,7 +326,12 @@
               </div>
             </li>
             <li class="team-photo team-item">
-              <img src="./images/img2.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img3-2x.png 2x"
+                src="./images/img2.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="team-item-container">
                 <h3 class="name-team employee-section">Camila Garcia</h3>
                 <p class="about employee-position">Marketing</p>
@@ -365,7 +380,12 @@
               </div>
             </li>
             <li class="team-photo team-item">
-              <img src="./images/img3.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/img3.jpg 1x, ./images/img4-2x.png 2x"
+                src="./images/img3.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="team-item-container">
                 <h3 class="name-team employee-section">Daniel Wilson</h3>
                 <p class="about employee-position">UI Designer</p>
@@ -756,7 +776,7 @@
       </div>
     </footer>
     <!-- MODAL WINDOW------>
-    <div class="backdrop-modal is-open">
+    <!-- <div class="backdrop-modal is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="icon-close" width="8" height="8">
@@ -842,6 +862,6 @@
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
