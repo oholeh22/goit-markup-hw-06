@@ -31,7 +31,7 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
     
@@ -399,7 +399,7 @@ list-style-type: none;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    padding: 17px 0;
+    
 }
 
 .logo-color {
@@ -771,7 +771,7 @@ list-style-type: none;
     justify-content: center; */
     max-width: 208px;
     margin-left: 40px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -779,7 +779,7 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     /* margin-bottom: 16px; */
-    
+    margin: 17px 0;
 }
 
 .footer-text {
@@ -789,7 +789,7 @@ list-style-type: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .footer-size {
@@ -1201,14 +1201,17 @@ list-style-type: none;
         gap: 24px;
     }
 
+    .img-team {
+        width: 264px;
+    }
 
-
-    .list-team {
-        max-width: 584px;
+    .container .list-team {
+        max-width: 552px;
     }
 
     .porftfolio-container {
         gap: 72px;
+        
     }
 
     .porftfolio-item-container {
@@ -1217,12 +1220,13 @@ list-style-type: none;
     .list-portfolio {
         gap: 24px;
         display: flex;
+        flex-direction: inherit;
         flex-wrap: wrap;
     }
 
     .portfolio-img {
-        /* width: 356px;
-        height: 300px; */
+        width: 356px;
+        /* height: 300px; */
     }
 
     .logo-footer {
@@ -1235,21 +1239,21 @@ list-style-type: none;
 
     .footer-container {
         /* align-items: center; */
-        padding-left: 96px;
-        padding-right: 148px;
-        
+        /* padding-left: 96px;
+        padding-right: 148px; */
+        width: 584px;
     }
 
-
+    
 
     .footer-social {
-        margin-left: 24px;
+        margin-left: 0;
         align-self: start;
     }
 
     .footer-social-paragraph {
         display: block;
-        padding: 17px 0;
+        margin: 17px 0;
     }
 
     .form-footer-container {
@@ -1267,7 +1271,7 @@ list-style-type: none;
     }
 
     .box-footer {
-        /* margin-right: 24px; */
+        margin-right: 24px;
     }
 
     .modal {
@@ -1285,8 +1289,9 @@ list-style-type: none;
     }
 
     .main-section {
-        max-width: 1440px;
-        max-height: 600px;
+        /* max-width: 1440px;
+        max-height: 600px; */
+        padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office-dt.png);
     }
@@ -1318,8 +1323,16 @@ list-style-type: none;
 
     .list-team {
         padding-left: 0;
-        padding-bottom: 120px;
+        
         gap: 24px;
+    }
+
+    .our-team {
+        padding-bottom: 120px;
+    }
+
+    .container .list-team {
+        max-width: 1158px;
     }
 
     .portfolio {
@@ -1373,11 +1386,12 @@ list-style-type: none;
     }
 
     .footer-social-paragraph {
-        margin-bottom: 0;
+        margin-bottom: 16px;
+
     }
 
     .footer-container {
-        
+        width: 1158px;
     }
 
     .modal {
